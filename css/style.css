@@ -1,0 +1,117 @@
+.my-font {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+}
+
+.colorflux {
+    background-color: var();
+}
+
+header {
+    color: white;
+    height: 100px;
+    background-color: rgb(79, 102, 216);
+    padding: 50px;
+}
+
+/* animação underline */
+.hover-underline-animation {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+/* fim animação underline */
+
+.container-fluid {
+    height: 20rem;
+    background-color: transparent;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.card {
+    align-content: center;
+    margin: 40px;
+    width: 90%;
+    height: 85%;
+    background-color: rgb(79, 102, 216);
+    border-radius: 25px;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 5px #333;
+    transition: 0.5s;
+}
+
+.card > p {
+    color: white;
+    margin: 40px 40px;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.card img {
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+}
+
+/* fim do card */
+
+.user {
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.usericon {
+    width: 50px;
+    height: 90%;
+    margin-left: 60px;
+    margin: 5px;
+    justify-content: end;
+}
+
+.user > p {
+    margin: 8px;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: rgb(79, 102, 216);
+}
+
+/* Fim user */
+
+.cards-pagamentos {
+    display: flex;
+}
+
+.card {
+    color: white;
+}
+
+
+.list-group > li {
+    color: white;
+    background-color: rgb(79, 102, 216);
+}
